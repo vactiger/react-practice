@@ -7,9 +7,10 @@ import './css/bootstrap.min.css';
 // import './css/all.min.css';
 import './css/style.css';
 import './css/responsive.css';
+import './css/custom.css';
 // Component
 import Header from './Header';
-import Main from './main';
+import Main from './Main';
 
 import reportWebVitals from './reportWebVitals';
 

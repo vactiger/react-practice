@@ -1,4 +1,7 @@
-import bannerImage from './img/banner/banner-image.png';
+// import bannerImage from './img/banner/banner-image.png';
+import bannerImage from './img/banner/coding.jpg';
+import Button from './Button';
+import BannerImg from './BannerImg';
 
 function SiteBanner() {
   return (
@@ -11,14 +14,14 @@ function SiteBanner() {
             <h4 className="title-text text-uppercase">Senior Wordpress Developer</h4>
             <div className="site-buttons">
               <div className="d-flex flex-row flex-wrap">
-                <button type="button" className="btn button primary-button mr-4 text-uppercase">hire
-                  me</button>
-                <button type="button" className="btn button secondary-button text-uppercase">Get cv</button>
+                {/* 按鈕有二個屬性：內容文字 value、按鈕顏色 class */}
+                <Button inputValue={['hire me', 'primary-button']} />
+                <Button inputValue={['Get cv', 'secondary-button']} />
               </div>
             </div>
           </div>
           <div className="col-lg-6 col-md-12 banner-image">
-            <img src={bannerImage} alt="banner-img" className="img-fluid" />
+            <BannerImg bannerImage={bannerImage} />
           </div>
         </div>
       </div>
